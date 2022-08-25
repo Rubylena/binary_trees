@@ -16,9 +16,9 @@
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	binary_tree_t *newnod;
+	binary_tree_t *newnod = NULL;
 
-	newnod = (struct binary_tree_s *)malloc(sizeof(binary_tree_t));
+	newnod = malloc(sizeof(binary_tree_t));
 
 	if (newnod == NULL)
 		return (NULL);
