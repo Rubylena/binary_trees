@@ -7,18 +7,7 @@
  */
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
-	binary_tree_t *new;
-
-	new = malloc(sizeof(binary_tree_t));
-
-	if (!node)
-		return (0);
-
-	new->parent = node->parent;
-	new->left = node->left;
-	new->right = node->right;
-
-	if (!new->left && !new->right)
+	if (node && !node->left  && !node->right)
 		return (1);
 
 	return (0);
